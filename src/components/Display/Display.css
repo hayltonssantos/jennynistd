@@ -2,7 +2,7 @@
 .text{
     display: inline-flex;
     flex-wrap: wrap;
-    position: absolute;
+    position: relative;
     
     top: 5px;
     margin: 10px auto;
@@ -31,7 +31,9 @@
 
 .nameBox{
     display: flex;
-    position: absolute;
+    flex-wrap: wrap;
+    flex-basis: 300%;
+    position: relative;
     bottom: 5px;
     
     font-size: 25px;
@@ -40,10 +42,11 @@
     color: white;
 }
 
-.titulo{
-    display: flex;
-    position: absolute;
-    bottom: 75%;
+.titulo, .date, .textDate, .name{
+   
+    display: inline;
+    position: relative;
+    width: 100%;
     
     color: white;
     text-shadow: 0.1em 0.1em 0.2em black; 
@@ -51,15 +54,45 @@
     font-size: 100px;
     font-family: 'Cookie' ;
     justify-content: center;
-    width: 0;
-    animation: typing 2s steps(20, end) infinite;
+}
+
+.name{
+    font-size: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.titulo{
+    animation: typing 3.5s steps(60, end) infinite;
     overflow: hidden;
     white-space: nowrap;
+    
 }
+
+.textDate{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    font-family: 'Dancing Script';
+}
+
+.date{
+    display: block;
+    position: relative;
+
+    font-size: 60px;
+
+    animation: none;
+    
+}
+
+
 
 /* -----------------MEDIA QUERYS------------------ */
 @media screen and (max-width:480px) {
-
+    .titulo{
+        font-size: 90px
+       }
 }
 @media screen and (min-width: 481px) and (max-width:768px) {
    
@@ -98,6 +131,6 @@
 }
 
 @keyframes typing {
-    from { width: 0 }
+    from { width: 5px }
     to { width: 100% }
   }

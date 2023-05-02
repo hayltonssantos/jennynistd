@@ -1,5 +1,37 @@
+.a{
+    
+    display: flex;
+    z-index: 1;
+
+    width: 100px;
+    height: 100px;
+
+    text-decoration: none;
+    
+}
+
 .button{
-    bottom: 0px;
+    
     display: block;
-    position: absolute;
+
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+
+    background: rgba(2, 0, 120, 1);
+    box-shadow: 38px 38px 112px 0px rgba(0,0,0,0.75);  
+    border: none;
+}
+
+.button:hover{
+    background-color: rgb(122, 197, 122);
+    transition: 1s;
+}
+
+.textButton{
+    display: flex;
+    justify-content: center;
 }
