@@ -12,7 +12,7 @@ export default function PreCard(props) {
     const handleMouseEnter = () =>{ setIsHover(true) }
     const handleMouseLeave = () =>{ setIsHover(false) }
     
-    function hover(number){
+    function hover(number){ 
         if (number === 1){
             return photo1
         }
@@ -31,7 +31,9 @@ export default function PreCard(props) {
         style={isHover ? {
           background: `url(${hover(props.numberPhoto)}) no-repeat  center`,
           backgroundSize: 'cover',
-          transition: '2s'
+          transition: '2s',
+          zIndex: '4',
+          width: '150px'
       } : {}}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}

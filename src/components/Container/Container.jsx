@@ -11,11 +11,6 @@ export default function Container() {
     <>
     <div className={styles.container}>
         <Text/>
-        
-        
-      {/* <Button link={link} text='Confirmar Presença'>
-          <GiConfirmed style={{color: 'white', fontSize: '50px'}}/>
-      </Button> */} 
     </div>
     </>
   )
