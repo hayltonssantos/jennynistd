@@ -11,7 +11,7 @@ export default function Text() {
   const [day, hour, minute, second] = useCountdown('2023-06-1')
   const link = "https://api.whatsapp.com/"
   const sug = 'https://drive.google.com/file/d/1mi5u9Q6fc5w_nuhlMWDqVDRjNHy87mhs/view?usp=sharing'
-  const mapa = 'https://goo.gl/maps/'
+  const mapa = 'https://www.google.com.br/maps'
 
 
   const [isHover, setIsHover] = useState();
