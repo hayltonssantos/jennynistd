@@ -88,9 +88,8 @@
 }
 
 .text:hover, .nameBox:hover{
-    font-size: 0px;
-    width: 0px;
-
+    visibility: hidden;
+    opacity: 0;
 }
 
 
