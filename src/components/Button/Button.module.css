@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
 :root{
-    --sizewidth: 120px;
+    --sizewidth: 80px;
     --sizieheight: var(--sizewidth)
 }
 
@@ -14,7 +14,7 @@
 
     width: var(--sizewidth);
     height: var(--sizieheight);
-    border-radius: 50%;
+    border-radius: 40%;
 
     text-decoration: none;
 }
@@ -29,7 +29,7 @@
     margin-left: 5px;
 
 
-    border-radius: 50%;
+    border-radius: 40%;
     cursor: pointer;
     color: white;
 

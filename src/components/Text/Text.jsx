@@ -8,7 +8,7 @@ import { GiConfirmed, GiPresent } from "react-icons/gi";
 import {FaMapPin } from "react-icons/fa";
 
 export default function Text() {
-  const [day, hour, minute, second] = useCountdown('2023-06-1')
+  const [day, hour, minute, second] = useCountdown('2024-06-1')
   const link = "https://api.whatsapp.com/"
   const sug = 'https://drive.google.com/file/d/1mi5u9Q6fc5w_nuhlMWDqVDRjNHy87mhs/view?usp=sharing'
   const mapa = 'https://www.google.com.br/maps'
@@ -50,13 +50,13 @@ export default function Text() {
                     style='textDate'>              
       </Display>
       <Button link={mapa} text='Local' style='nameBox'>
-          <FaMapPin style={{color: 'white', fontSize: '50px'}}/>
+          <FaMapPin style={{color: 'white', fontSize: '30px'}}/>
       </Button>
       <Button link={link} text='Confirmar Presença' style='nameBox'>
-          <GiConfirmed style={{color: 'white', fontSize: '50px'}}/>
+          <GiConfirmed style={{color: 'white', fontSize: '30px'}}/>
       </Button>
       <Button link={sug} text='Sugestão de presente' style='nameBox'>
-          <GiPresent style={{color: 'white', fontSize: '50px'}}/>
+          <GiPresent style={{color: 'white', fontSize: '30px'}}/>
       </Button>
   </div>
   

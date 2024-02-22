@@ -4,7 +4,7 @@ import styles from './Button.module.css'
 export default function Button({text, link, children}) {
   return (
     <div className={styles.containerButton}>
-    <a className={styles.a} href={link} target='_blank'>
+    <a className={styles.a} href={link}>
       <button className={styles.button}>
         {children}
       </button>
